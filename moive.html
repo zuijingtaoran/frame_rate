@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.moive {
+				position: relative;
+				height: 70px;
+				width: 75px;
+				background: no-repeat center;
+				margin: 0 auto;
+				-webkit-background-size: 75px;
+				-moz-background-size: 75px;
+				background-size: 75px;
+				background-position: 0 0;
+			}
+			
+			
+		</style>
+	<link rel="stylesheet" href="css/css_aliyun.css" />
+		<script type="application/javascript">
+		    var obj = document.getElementById('obj');
+		    var i = 0; var add, ins;
+		    function x(str) {
+		        var ss = str;
+		        i--;
+		        if (i <= -50) {
+		              y(ss);
+		         
+                return;}              
+               
+		    
+		       document.getElementById(ss).style.backgroundPositionY = i * 75 + "px";
+		       add = setTimeout(function () { x(ss); }, 6);
+		    }
+		    function y(str) {
+		        var ss = str;
+		        i++;
+		        if (i >= 0) {return; }
+
+
+		        document.getElementById(ss).style.backgroundPositionY = i * 75 + "px";
+		        ins = setTimeout(function () { y(ss); }, 6);
+		    }
+		
+		</script>
+	</head>
+
+	<body>
+	<div>
+		<div class="moive yd" id='obj' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB1.jpg);"></div>
+             <div class="moive yd" id='Div1' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB2.jpg);"></div>
+             <div class="moive yd" id='Div2' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB3.jpg);"></div>
+             <div class="moive yd" id='Div3' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB4.jpg);"></div>
+             <div class="moive yd" id='Div4' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB5.jpg);"></div>
+             <div class="moive yd" id='Div5' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB6.jpg);"></div>
+			   <div class="moive yd" id='Div6' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/pTB7.png);"></div>
+			   <div class="moive yd" id='Div7' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB8.jpg);"></div>
+			   <div class="moive yd" id='Div8' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB9.jpg);"></div>
+			   <div class="moive yd" id='Div9' onmouseover="x(this.id)" 
+			
+			 style="background-image: url(doc/img/TB10.jpg);"></div>
+	
+	
+	
+	
+	
+	</div>
+		<div class="point-area" style="top: 105px; left: 125px; position: absolute; width: 110px; height: 110px; visibility: visible; opacity: 1;">
+			<p class="point-name" style="position: absolute;  display:none;top: 45px; left: 65px;">美西</p>
+			<div class="point point-dot"></div>
+			<div class="point point-10"></div>
+			<div class="point point-40"></div>
+			<div class="point point-shadow point-80"></div>
+		</div>
+	</body>
+
+</html>
